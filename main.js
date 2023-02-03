@@ -45,9 +45,17 @@ download.addEventListener("click",()=>{
   var file = new File([blob], "foo.txt", {type: "text/plain"}); //converting it to file
   const url = URL.createObjectURL(file); //creating url for the file
   // console.log(url)
+ if(fileName.value != ""){
   download.href = url; //setting url as the source for link to download
   download.download = fileName.value;
+ }else{
+  fileName.focus()
+ }
   
 
 })
 
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./service-worker.js'); //registering a Service worker is mandatory for PWA installation
+}

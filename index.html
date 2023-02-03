@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>a simple text editor in js</title>
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#1a1a1a"/>
+  <link rel="apple-touch-icon" href="./img/apple_touch_icon.png">
 </head>
 <body>
     <div class="div_files">
       <a id="download" download>Save</a>
-      <input type="text" id="fileName">
+      <input type="text" id="fileName" placeholder="Enter a name for file">
       <input id="getFile" type="file">
     </div>
     <textarea name="text" id="inputarea"></textarea>
