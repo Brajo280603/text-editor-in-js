@@ -1,0 +1,25 @@
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  resize: none;
+  width: 100%;
+  height: 90vh;
+}
+
+.div_files{
+  margin: 1rem;
+}
+
+#download {
+  border: 2px solid grey;
+  padding:1px 4px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: darkslategrey;
+  background-color: lightgrey;
+  cursor: pointer;
+  font-family: monospace;
+}
+
